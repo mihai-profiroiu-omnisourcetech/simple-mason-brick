@@ -1,6 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sawa/app/expense_income/repositories/{{name.snakeCase()}}_repositories.dart';
-
+import '../repositories/{{name.snakeCase()}}_repositories.dart';
 
 class {{name.pascalCase()}}Provider extends StateNotifier<AsyncValue<bool>> {
   {{name.pascalCase()}}Provider(this.ref) : super(const AsyncLoading());
